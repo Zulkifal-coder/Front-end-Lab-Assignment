@@ -1,0 +1,105 @@
+body {
+    background-color: #f4f7f6;
+    font-family: sans-serif;
+}
+.navbar {
+    background-color: #758052;
+    padding: 15px;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-custom {
+    background-color: #758052;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #576542;
+    color: white;
+}
+.site-footer {
+    background-color: #576542;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px; 
+    font-size: 14px;
+}
+.custom-nav-flex {
+    display: flex !important;
+    justify-content: space-between; 
+    align-items: center;           
+}
+.nav-links {
+    list-style: none;
+    display: flex;                 
+    align-items: center;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.intro-p::before {
+    content: "“ ";
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #758052;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #758052;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease; 
+}
+.main-profile-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.main-profile-card:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+.main-profile-card:hover .profile-img {
+    filter: grayscale(0%);
+}
+
+.skills-flex-row {
+    display: flex;
+    gap: 15px; 
+}
+
+.custom-skill-box {
+    flex: 1; 
+    background-color: rgb(235, 161, 161);
+    padding: 20px;
+    border: 1px solid #140e0e;
+    border-radius: 6px;
+    position: relative; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.custom-badge-new {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+    .skills-flex-row {
+        flex-direction: column; 
+    }
+}
